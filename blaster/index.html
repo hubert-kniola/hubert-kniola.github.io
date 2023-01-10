@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <title>[GAME] BLASTER</title>
+  </head>
+  <body>
+    <div id="holder" class="">
+      <div id="start-button" onclick="startGame()" class="button">
+        <p class="btnText">PLAY</p>
+        <div class="btnTwo">
+          <p class="btnText2">GO!</p>
+        </div>
+      </div>
+      <div id="settings-button" class="checkbox">
+        <label class="switch" for="checkbox">
+          <input type="checkbox" id="checkbox" value="_sound" />
+          <div class="slider round"></div>
+        </label>
+        <p>SOUNDS</p>
+      </div>
+    </div>
+
+    <div id="game-main" class="center hide">
+      <div class="container">
+        <div class="game-wrap">
+          <canvas width="1300px" height="700" id="game"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/start.js"></script>
+    <script src="scripts/main.js" id="reloadMe"></script>
+  </body>
+</html>
