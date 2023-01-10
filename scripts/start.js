@@ -16,4 +16,6 @@ function startGame() {
     audio.play();
     audio_start .play();
   }
+  
+  Game.init();
 }

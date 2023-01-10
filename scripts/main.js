@@ -401,5 +401,3 @@ Particle.prototype.draw = function () {
     delete Game.particles[this.id];
   }
 };
-
-Game.init();
