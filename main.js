@@ -134,7 +134,8 @@ var Game = {
 
   gameOver: function () {
     let audio = new Audio("./gameover.mp3");
-    if (_sound) {
+    audio.volume = 0.7
+    if (document.querySelector("#checkbox").checked) {
       audio.play();
     }
     this.isGameOver = true;

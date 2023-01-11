@@ -10,12 +10,14 @@ function startGame() {
   holder.style.display = "none";
   holder.classList.add("hide");
 
-  let audio = new Audio("./soundtrack.wav");
-  let audio_start = new Audio("./start.wav");
-  if (_sound) {
+  if (document.querySelector("#checkbox").checked) {
+    let audio = new Audio("./soundtrack.mp3");
+    let audio_start = new Audio("./start.wav");
+    audio.volume = 0.2;
+    audio_start.volume = 0.4;
     audio.play();
-    audio_start .play();
+    audio_start.play();
   }
-  
+
   Game.init();
 }
